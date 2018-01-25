@@ -3,7 +3,7 @@ import argparse
 
 #命令行输入参数处理
 parser = argparse.ArgumentParser()
-
+#为了防止字符长宽比导致图像边窄，默认将width和height设置为2：1
 parser.add_argument('file')     #输入文件
 parser.add_argument('-o', '--output',help="指定输出文件的名字")
 parser.add_argument('--width', type = int, default = 100,help="指定输出字符画宽")
